@@ -197,4 +197,4 @@ O projeto demonstra a aplicação de práticas de qualidade de software em um m�
 
 ## Repositório GitHub
 
-https://github.com/SEU_USUARIO/projeto_calculadora
+https://github.com/lucasredshootingstar/projeto_calculadora_UI_UX.git
