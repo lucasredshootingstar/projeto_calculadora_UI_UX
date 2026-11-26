@@ -1,0 +1,7 @@
+10 + 5 | esperado: 15.0 | obtido: 15.0
+10 - 5 | esperado: 5.0 | obtido: 5.0
+10 * 5 | esperado: 50.0 | obtido: 50.0
+10 / 4 | esperado: 2.5 | obtido: 2.5
+10 / 0 | esperado: Não é possível dividir por zero. | obtido: Não é possível dividir por zero.
+10 % 5 | esperado: Operação inválida. | obtido: Operação inválida.
+6 testes aprovados.

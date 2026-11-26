@@ -1,0 +1,42 @@
+package calculadora;
+
+/** Módulo de operações matemáticas do FinançApp.
+ * @author Equipe FinançApp
+ * @version 2.0
+ */
+public class Calculadora {
+    /** Executa uma operação matemática.
+     * @param a primeiro operando
+     * @param b segundo operando
+     * @param op símbolo da operação
+     * @return resultado da operação
+     * @throws ArithmeticException se houver divisão por zero
+     * @throws IllegalArgumentException se a operação for inválida
+     */
+    public double calc(int a, int b, String op) {
+        if (op == null) {
+            throw new IllegalArgumentException("Operação inválida.");
+        }
+        // O switch centraliza a seleção da operação.
+        return switch (op) {
+            case "+" -> (double) a + b;
+            case "-" -> (double) a - b;
+            case "*" -> (double) a * b;
+            case "/" -> dividir(a, b);
+            default -> throw new IllegalArgumentException("Operação inválida.");
+        };
+    }
+
+    /** Valida o divisor antes de calcular.
+     * @param dividendo número a dividir
+     * @param divisor número pelo qual dividir
+     * @return quociente real
+     * @throws ArithmeticException se o divisor for zero
+     */
+    private double dividir(int dividendo, int divisor) {
+        if (divisor == 0) {
+            throw new ArithmeticException("Não é possível dividir por zero.");
+        }
+        return (double) dividendo / divisor;
+    }
+}
